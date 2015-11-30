@@ -1,0 +1,11 @@
+buildscript {
+  repositories {
+    maven {
+      url "http://maven.pd.local/content/repositories/releases"
+    }
+  }
+  dependencies {
+    classpath 'com.blackboard.gradle:jmh-gradle-plugin:1.3'
+  }
+}
+apply plugin: com.blackboard.gradle.JMHPlugin
